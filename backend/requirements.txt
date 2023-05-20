@@ -6,4 +6,4 @@ starlette
 pathlib
 python-dotenv
 passlib
-uvicorn[standard]
+uvicorn
