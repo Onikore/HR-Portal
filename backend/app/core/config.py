@@ -9,8 +9,8 @@ load_dotenv(dotenv_path)
 
 
 class Settings(BaseSettings):
-    FIRST_SUPERUSER_EMAIL = os.getenv('FIRST_SUPERUSER_EMAIL')
-    FIRST_SUPERUSER_PASSWORD = os.getenv('FIRST_SUPERUSER_PASSWORD')
+    FIRST_SUPERUSER_EMAIL: str = os.getenv('FIRST_SUPERUSER_EMAIL')
+    FIRST_SUPERUSER_PASSWORD: str = os.getenv('FIRST_SUPERUSER_PASSWORD')
 
     # POSTGRES CREDS
     __DB_USER: str = os.getenv('DB_USER')
