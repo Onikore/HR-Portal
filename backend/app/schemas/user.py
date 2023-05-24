@@ -7,7 +7,6 @@ class UserBase(BaseModel):
     name: str = None
     family_name: str = None
     last_name: str = None
-    is_superuser: bool = False
 
 
 class UserCreate(UserBase):

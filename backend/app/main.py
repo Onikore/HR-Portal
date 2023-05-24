@@ -9,12 +9,12 @@ app = FastAPI(title='HR Cab', openapi_url='/api/v1/openapi.json', version='0.0.1
 app.include_router(api_router)
 
 app.add_middleware(
-        CORSMiddleware,
-        allow_origins=['*'],
-        allow_credentials=True,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.on_event("startup")
