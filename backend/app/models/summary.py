@@ -12,6 +12,7 @@ class Summary(Base):
     only_remote = Column(Boolean)
     ready_for_trips = Column(Boolean)
     pref_salary = Column(Float)
+    experience = Column(String)
     pref_position = Column(String)
     skills = Column(String)
     pref_city = Column(String)

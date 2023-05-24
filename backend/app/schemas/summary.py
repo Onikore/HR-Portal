@@ -8,6 +8,7 @@ class SummaryBase(BaseModel):
     only_remote: bool = None
     ready_for_trips: bool = None
     pref_salary: float = None
+    experience: str = None
     pref_position: str = None
     skills: str = None
     pref_city: str = None
